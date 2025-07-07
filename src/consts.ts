@@ -9,6 +9,17 @@ export const ATTRIBUTE_LIST = [
     'Charisma',
 ];
 
+export const ATTRIBUTES_DEFAULTS: Attributes = {
+  Charisma: 10,
+  Constitution: 10,
+  Dexterity: 10,
+  Intelligence: 10,
+  Strength: 10,
+  Wisdom: 10,
+};
+
+export const MAX_FOR_ATTRIBUTES = 70;
+
 export const CLASS_LIST: Record<Class, Attributes> = {
     'Barbarian': {
         'Strength': 14,
@@ -57,3 +68,4 @@ export const SKILL_LIST = [
     { name: 'Survival', attributeModifier: 'Wisdom' },
 
 ]
+

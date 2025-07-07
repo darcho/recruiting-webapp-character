@@ -1,3 +1,15 @@
+export type Character = {    
+    attributes: Attributes;
+    skills: CharacterSkill[];
+    selectedClass?: Class;
+    totalAttributePoints: number;
+}
+
+export type CharacterSkill = {
+    name: string;
+    points: number;
+}
+
 export type Attributes = {
     Strength: number;
     Dexterity: number;
